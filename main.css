@@ -1,0 +1,327 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Judson', serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-size: larger;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #000000;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .logo {
+        font-family: 'Jomhuria', sans-serif;
+        font-size: 32px;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navigation ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .navigation ul li a:hover {
+        color: gray;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-color: #1a1a1a;
+    }
+
+    .intro-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .intro-text {
+        flex: 1;
+        font-family: 'Judson', serif;
+        color: white;
+    }
+
+    .intro-text h2 {
+        font-family: 'JetBrains Mono', monospace;
+        margin-bottom: 20px;
+    }
+
+    .intro-description {
+        flex-basis: 100%;
+        color: white;
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin-top: 20px;
+        max-width: 700px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .intro-image {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .intro-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .products {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        background-color: #333333;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        flex: 1 1 200px;
+    }
+
+    .product-img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .product-button {
+        text-decoration: none;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+        width: 200px;
+        transition: background-color 0.5s ease;
+    }
+
+    .learn-more-btn {
+        text-decoration: none;
+        background-color: black;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+        width: 200px;
+        transition: background-color 0.5s ease;
+    }
+
+    .product-button:hover {
+        background-color: black;
+    }
+
+    .learn-more-btn:hover {
+        background-color: #333333;
+    }
+
+    .learn-more {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .learn-more-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .learn-more-text {
+        flex: 1;
+        padding: 20px;
+        max-width: 600px;
+    }
+
+    .learn-more-text h2 {
+        margin-top: 20px;
+    }
+
+    .learn-more-image {
+        flex-shrink: 0;
+        padding: 20px;
+    }
+
+    .learn-more-image img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .footer h4 {
+        margin-bottom: 10px;
+    }
+
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .footer-links ul li a:hover {
+        color: gray;
+    }
+
+    .pc-section {
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+
+    .pc-background {
+        background-image: url('/images/pc-about.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pc-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        right: 100px;
+        transform: translateY(-50%);
+        color: white;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .pc-text h2 {
+        font-family: 'JetBrains Mono', monospace;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+
+    .pc-text p {
+        font-family: 'Judson', serif;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+
+    .cpu-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .cpu-background {
+        background-image: url('/images/cpu-about.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .cpu-text {
+        text-align: center;
+        position: absolute;
+        left: 100px;
+        color: white;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .cpu-text h2 {
+        font-family: 'JetBrains Mono', monospace;
+        color: #ffffff;
+    }
+
+    .cpu-text p {
+        font-family: 'Judson', serif;
+        line-height: 1.6;
+    }
+
+    .visuals {
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+
+    .visuals img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }

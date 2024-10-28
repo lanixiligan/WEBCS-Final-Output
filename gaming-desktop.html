@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumWave Gaming Desktops</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomhuria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Judson&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="gaming-desktop-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="/images/quantumwavelogo.png" alt="QuantumWave Logo" class="logo-img">
+                <h1 class="logo">QUANTUMWAVE</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="learn-more.html">DISCOVER</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="intro">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Shop our High-Performance Desktop Gaming PCs.</h2>
+                    <p>
+                        From the world’s most customizable Gaming PC. There are four types of configurations available - small form factor, mid tower, full tower, and super tower. Then select the high-performance components to build your very own custom Gaming PC. Or choose from our growing selection of prebuilt and ready-to-ship Gaming PCs.
+                    </p>                
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <div class="product-img">
+                    <img src="/images/predator.png" alt="Predator Gaming PC">
+                </div>
+                <h2>Predator Gaming PC</h2>
+                <div class="specifications">
+                    <h4>Specifications:</h4>
+                    <ul>
+                        <li>CPU: AMD Ryzen 7 7700X</li>
+                        <li>GPU: NVIDIA GeForce GTX 1080 Ti SUPER</li>
+                        <li>Memory: 32GB (2 x 16GB) DDR5 5200 MHz</li>
+                        <li>Motherboard: B650</li>
+                        <li>Storage: 1TB NVMe M.2 SSD</li>
+                        <li>PSU: 750W Gold</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-img">
+                    <img src="/images/rubylane.png" alt="Ruby Lane Gaming PC">
+                </div>
+                <h2>Ruby Lane Gaming PC</h2>
+                <div class="specifications">
+                    <h4>Specifications:</h4>
+                    <ul>
+                        <li>CPU: Intel Core i7-12700K</li>
+                        <li>GPU: NVIDIA GeForce RTX 3080</li>
+                        <li>Memory: 16GB (2 x 8GB) DDR4 3200 MHz</li>
+                        <li>Motherboard: Z690</li>
+                        <li>Storage: 512GB NVMe M.2 SSD + 2TB HDD</li>
+                        <li>PSU: 650W Platinum</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-img">
+                    <img src="/images/toxica.png" alt="Toxica Gaming PC">
+                </div>
+                <h2>Toxica Gaming PC</h2>
+                <div class="specifications">
+                    <h4>Specifications:</h4>
+                    <ul>
+                        <li>CPU: AMD Ryzen 5 5600X</li>
+                        <li>GPU: AMD Radeon RX 6700 XT</li>
+                        <li>Memory: 16GB (2 x 8GB) DDR4 3600 MHz</li>
+                        <li>Motherboard: B550</li>
+                        <li>Storage: 1TB NVMe M.2 SSD</li>
+                        <li>PSU: 600W Gold</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="checkout-container">
+            <h2>Checkout</h2>
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <ul>
+                    <li>Product: <span id="selected-product">None</span></li>
+                    <li>Price: <span id="selected-price">$0.00</span></li>
+                </ul>
+                <h3>Total: <span id="total-price">$0.00</span></h3>
+            </section>
+
+            <section class="billing-info">
+                <h2>Billing Information</h2>
+                <form id="checkout-form">
+
+                    <label for="pc-select">Select Your Gaming PC:</label>
+                    <select id="pc-select">
+                        <option value="">--Choose a PC--</option>
+                        <option value="Predator Gaming PC" data-price="2499.99">Predator Gaming PC - $2,499.99</option>
+                        <option value="Ruby Lane Gaming PC" data-price="1799.99">Ruby Lane Gaming PC - $1,799.99</option>
+                        <option value="Toxica Gaming PC" data-price="1299.99">Toxica Gaming PC - $1,299.99</option>
+                    </select>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Shipping Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip" required>
+
+                    <button type="submit" class="checkout-button">Complete Purchase</button>
+                </form>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <div>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="gaming-desktop.html">Gaming PCs</a></li>
+                        <li><a href="workstation-products.html">Workstation Desktops</a></li>
+                        <li><a href="laptops.html">Gaming Laptops</a></li>
+                    </ul>
+                    <p>© 2024 QuantumWave. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const pcSelect = document.getElementById('pc-select');
+            const selectedProduct = document.getElementById('selected-product');
+            const selectedPrice = document.getElementById('selected-price');
+            const totalPrice = document.getElementById('total-price');
+
+            pcSelect.addEventListener('change', function () {
+                const selectedOption = pcSelect.options[pcSelect.selectedIndex];
+                const name = selectedOption.value;
+                const price = selectedOption.getAttribute('data-price');
+
+                selectedProduct.textContent = name ? name : 'None';
+                selectedPrice.textContent = price ? `$${parseFloat(price).toFixed(2)}` : '$0.00';
+                totalPrice.textContent = price ? `$${parseFloat(price).toFixed(2)}` : '$0.00';
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
